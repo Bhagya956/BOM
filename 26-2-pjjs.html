@@ -1,0 +1,90 @@
+<html>
+    <head>
+
+        <style>
+            table{
+                border:5px solid black;width: 400px;height: 300px;text-align: center;font-size: larger;font-style: italic;font-weight:900;
+
+            }
+
+            td{
+                border:3px solid red;-webkit-text-fill-color: blueviolet;background-color: antiquewhite;
+            }
+        </style>
+
+        <h1 style="color:fuchsia;background-color: aquamarine;">Check Details</h1>
+
+    </head>
+    <body>
+
+        <script>
+            var tb=document.createElement("table");
+            document.body.appendChild(tb);
+
+            var trr1=document.createElement("tr");
+            tb.appendChild(trr1);
+
+            var tdd1=document.createElement("td");
+            trr1.appendChild(tdd1);
+            tdd1.innerText="username"
+        
+        
+
+            var tdd2=document.createElement("td");
+            trr1.appendChild(tdd2);
+            tdd2.innerHTML=window.localStorage.getItem("name");
+
+
+            var trr2=document.createElement("tr");
+            tb.appendChild(trr2);
+
+            var tdd3=document.createElement("td");
+            trr2.appendChild(tdd3);
+            tdd3.innerText="Password"
+
+            var tdd4=document.createElement("td");
+            trr2.appendChild(tdd4);
+            tdd4.innerHTML=window.localStorage.getItem("password");
+
+
+
+            var trr3=document.createElement("tr");
+            tb.appendChild(trr3);
+
+            var tdd5=document.createElement("td");
+            trr3.appendChild(tdd5);
+            tdd5.innerText="Email"
+
+            var tdd6=document.createElement("td");
+            trr3.appendChild(tdd6);
+            tdd6.innerHTML=window.localStorage.getItem("Email");
+
+
+            var trr4=document.createElement("tr");
+            tb.appendChild(trr4);
+
+            var tdd7=document.createElement("td");
+            trr4.appendChild(tdd7);
+            tdd7.innerText="Mother Name"
+
+            var tdd8=document.createElement("td");
+            trr4.appendChild(tdd8);
+            tdd8.innerHTML=window.localStorage.getItem("mothername");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //console.log(localStorage.getItem("name"));
+        </script>
+    </body>
+</html>

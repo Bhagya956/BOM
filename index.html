@@ -1,0 +1,59 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <p>
+            <h1>Register for an internship oppurtunity</h1>
+        </p>
+
+        <button style="background-color: aqua;border: 3px solid;font-weight: 600;">Register</button>
+
+
+        <script>
+
+            var btn=document.getElementsByTagName("button");
+            btn[0].addEventListener("click",()=>{
+
+                var nn=prompt("Enter name");
+            window.localStorage.setItem("name",nn);
+
+            var ps=prompt("Enter Password");
+            window.localStorage.setItem("password",ps);
+
+            var em=prompt("Enter Email");
+            window.localStorage.setItem("Email",em);
+
+            var mn=prompt("Enter Mothername");
+            window.localStorage.setItem("mothername",mn);
+
+
+
+
+
+
+
+
+        })
+
+        var ud=document.createElement("button");
+        ud.style.backgroundColor="white"
+
+        document.body.appendChild(ud);
+        ud.innerText="Check details";
+        ud.addEventListener("click",()=>{
+            window.location.assign("./26-2-pjjs.html");
+
+
+        })
+
+            //window.location.assign("./26-2-pjjs.html")
+
+        
+
+        //window.location.assign("./even.html")
+            //console.log(window.localStorage.getItem("name"));
+        </script>
+    </body>
+</html>
